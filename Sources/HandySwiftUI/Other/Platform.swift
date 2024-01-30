@@ -10,6 +10,7 @@ public enum Platform: AutoConforming {
    case pc
    case phone
    case tv
+   case headset
    case vision
    case watch
 
@@ -41,6 +42,7 @@ public enum Platform: AutoConforming {
       pc: T? = nil,
       phone: T? = nil,
       tv: T? = nil,
+      headset: T? = nil,
       vision: T? = nil,
       watch: T? = nil
    ) -> T {
@@ -50,6 +52,7 @@ public enum Platform: AutoConforming {
       case .pc: pc ?? defaultValue
       case .phone: phone ?? defaultValue
       case .tv: tv ?? defaultValue
+      case .headset: headset ?? defaultValue
       case .vision: vision ?? defaultValue
       case .watch: watch ?? defaultValue
       }
